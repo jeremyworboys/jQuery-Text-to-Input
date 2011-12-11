@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text to Input jQuery Plugin Example</title>
+
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+
+	<style>
+		.tti_text {
+			color: #808080;
+			display: block;
+			font-size: 13px;
+			line-height: 18px;
+			padding: 6px 0 4px;
+			width: 270px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<h1 style="margin-top:20px;">Text to Input jQuery Plugin Example</h1>
+		<div class="row"><div class="span16">
+
+			<h3>Usage</h3>
+			<p>General usage is to select the input fields that you would like to enable text to input on.
+			<pre><code class="language-javascript">$("input").textToInput();</code></pre>
+
+			<h4>Options</h4>
+			<dl>
+				<dt>text_tag</dd>
+				<dd>
+					You may specify the tag used to wrap the text that replaces the input fields. Default is <code class="language-css">&lt;span></code>
+				</dd>
+				<br>
+				<dt>text_class</dd>
+				<dd>
+					You may specify the class applied to the tag that wraps the text that replaces the input fields. Default is <code class="language-css">.tti_text</code>
+				</dd>
+				<br>
+				<dt>no_value_text</dd>
+				<dd>
+					You may specify the text used in place of an input that has no value. When converted to an input, this text is used as a placeholder. Default is <code>Click here to add value...</code>
+				</dd>
+
+			<hr />
+
+			<h3>Example</h3>
+			<form action="#">
+				<div class="clearfix">
+					<label for="name">Name</label>
+					<div class="input">
+						<input class="xlarge" id="name" name="name" size="30" type="text" value="Jeremy Worboys">
+					</div>
+				</div>
+				<div class="clearfix">
+					<label for="email">Email</label>
+					<div class="input">
+						<input class="xlarge" id="email" name="email" size="30" type="text" value="jeremy@complexcompulsions.com">
+					</div>
+				</div>
+				<div class="clearfix">
+					<label for="email2">Second Email</label>
+					<div class="input">
+						<input class="xlarge" id="email2" name="email2" size="30" type="text">
+					</div>
+				</div>
+				<div class="actions">
+					<button type="submit" class="btn primary">Save changes</button>&nbsp;
+					<button type="reset" class="btn">Clear</button>
+				</div>
+			</form>
+
+		</div></div>
+
+		<footer>Designed by <a href="http://complexcompulsions.com" title="Complex Compulsions">Jeremy Worboys</a>.<span style="float:right;">Email for <a href="mailto:support@complexcompulsions.com">support</a>.</span></footer>
+	</div>
+
+	<!-- Javascript Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.textToInput.min.js"></script>
+
+	<!-- This will usually go in your script.js file -->
+	<script>
+		$("input").textToInput();
+	</script>
+
+</body>
+</html>
