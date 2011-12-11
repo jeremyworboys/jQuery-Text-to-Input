@@ -3,7 +3,8 @@
 ## Usage
 
 General usage is to select the input fields that you would like to enable text to input on.
-```
+
+```javascript
 $("input").textToInput();
 ```
 
